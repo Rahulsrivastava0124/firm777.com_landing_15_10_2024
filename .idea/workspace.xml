@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67428e42-159d-4d7f-9d23-7b758daa593e" name="Changes" comment="">
+    <list default="true" id="67428e42-159d-4d7f-9d23-7b758daa593e" name="Changes" comment="image changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +23,12 @@
     &quot;assignee&quot;: &quot;Rahulsrivastava0124&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Rahulsrivastava0124/firm777.git&quot;,
-    &quot;accountId&quot;: &quot;7388d663-c1c4-4022-91c8-ee8b5ce17ad7&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Rahulsrivastava0124/firm777.com_landing_15_10_2024.git",
+    "accountId": "7388d663-c1c4-4022-91c8-ee8b5ce17ad7"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -72,10 +74,24 @@
       <workItem from="1727182227397" duration="10000" />
       <workItem from="1727452255612" duration="973000" />
       <workItem from="1727461586500" duration="1567000" />
+      <workItem from="1729809053073" duration="400000" />
     </task>
+    <task id="LOCAL-00001" summary="image changes">
+      <option name="closed" value="true" />
+      <created>1729809222151</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729809222151</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="image changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="image changes" />
   </component>
 </project>
