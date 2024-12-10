@@ -40,7 +40,7 @@ const submitForm = (event) => {
     phone,
     promocode:PromoCode,
   }).then(result => {
-    axios.post('https://script.google.com/macros/library/d/1uoW_RsNFfUnSvqauiAdif5zK55TwESkioPRNlnb9MCUEVCB_sDGwOnGA/2',{
+    axios.post('https://script.google.com/macros/s/AKfycbwAgpXTcCE4hlWPn349bUPNYwelfjLYsTVmyf8nh8oaJZdO388dpnYmZdmM0xWI_0Tzug/exec',{
       Name:name,
       Phone:phone,
       Promocode:PromoCode,
