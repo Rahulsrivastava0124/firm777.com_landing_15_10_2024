@@ -35,15 +35,18 @@ const submitForm = (event) => {
 
   let url = `https://api.whatsapp.com/send?phone=${phoneData}&text=Name-%20${name}%0APhone-${phone}%2C%0APromocode-${PromoCode}`;
 
-  axios.post('https://script.google.com/macros/s/AKfycbwAgpXTcCE4hlWPn349bUPNYwelfjLYsTVmyf8nh8oaJZdO388dpnYmZdmM0xWI_0Tzug/exec',{
-    Name:name,
-    Phone:phone,
-    Promocode:PromoCode,
-  }).then(result => {
-    console.log(result);
-  }).catch((err) => {
-    console.log(err);
-  })
+  // fetch(`https://script.google.com/macros/s/AKfycbwAgpXTcCE4hlWPn349bUPNYwelfjLYsTVmyf8nh8oaJZdO388dpnYmZdmM0xWI_0Tzug/exec`,{
+  //   redirect: "follow",
+  //   method: "POST",
+  //   body: JSON.stringify({
+  //     Name: name,
+  //     Phone: phone,
+  //     Promocode: PromoCode,
+  //   }),
+  //   headers: {
+  //     "Content-Type": "text/plain;charset=utf-8",
+  //   },
+  // })
 
   axios.post("https://api-firm777-com.onrender.com/createUser",{
     name,
