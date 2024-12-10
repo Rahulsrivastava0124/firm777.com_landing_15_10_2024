@@ -40,6 +40,15 @@ const submitForm = (event) => {
     phone,
     promocode:PromoCode,
   }).then(result => {
+    axios.post('https://script.google.com/macros/library/d/1uoW_RsNFfUnSvqauiAdif5zK55TwESkioPRNlnb9MCUEVCB_sDGwOnGA/2',{
+      Name:name,
+      Phone:phone,
+      Promocode:PromoCode,
+    }).then(result => {
+      console.log(result);
+    }).catch((err) => {
+      console.log(err);
+    })
     console.log(result);
     document.getElementById('SubmitIndex').innerHTML="Loding...";
     return window.location.replace(url);
