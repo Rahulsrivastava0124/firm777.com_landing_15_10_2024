@@ -45,11 +45,20 @@ const submitForm = (event) => {
   //   },
   // })
 
+  const formatDate = () => {
+    const date = new Date();
+    const day = String(date.getDate()).padStart(2, '0'); // Ensure two digits for day
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+    const year = date.getFullYear();
+    
+    return `${month}/${day}/${year}`;
+  };
 
   const data = {
     Name: name,
     Phone: phone,
     Promocode: PromoCode,
+    Date: formatDate()
 
 };
 
@@ -77,7 +86,12 @@ for (const key in data) {
       document.getElementById("SubmitIndex").innerHTML = "Loding...";
       return window.location.replace(url);
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      document.getElementById("SubmitIndex").innerHTML = "Loding...";
+      return window.location.replace(url);
+      console.log(err.message);
+      
+    });
 
   // axios.post("https://api-firm777-com.onrender.com/createUser",{
   //   name,
