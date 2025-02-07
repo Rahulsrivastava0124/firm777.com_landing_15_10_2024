@@ -5,20 +5,20 @@ var phoneData;
 axios
   .get("https://api-firm777-com.onrender.com/getPhone")
   .then((result) => {
-    console.log("result data:--",result.data);
+    console.log("result data:--",result.data?.Phone);
     
     phoneData = result?.data?.phone;
     let anchors = document.querySelectorAll("a");
     anchors.forEach(function (anchor) {
       if (Promocode != undefined) {
         console.log(Promocode[1]);
-        anchor.href = `https://api.whatsapp.com/send?phone=${result?.data?.phone}&text=Hi%2C%20I%20Need%20ID%20,CODE%20-${Promocode[1]}`;
+        anchor.href = `https://api.whatsapp.com/send?phone=${result?.data?.Phone}&text=Hi%2C%20I%20Need%20ID%20,CODE%20-${Promocode[1]}`;
         if (document.getElementById("PromoCode")) {
           document.getElementById("PromoCode").value = Promocode[1];
           document.getElementById("PromoCode").disabled = true;
         }
       } else {
-        anchor.href = `https://api.whatsapp.com/send?phone=${result?.data?.phone}&text=Hi%2C%20I%20Need%20ID%20,CODE%20-FREE50`;
+        anchor.href = `https://api.whatsapp.com/send?phone=${result?.data?.Phone}&text=Hi%2C%20I%20Need%20ID%20,CODE%20-FREE50`;
       }
     });
   })
