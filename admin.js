@@ -26,9 +26,9 @@ axios
       cell1.innerHTML = items.Name;
       cell2.innerHTML = items.Phone;
       cell3.innerHTML = items.Promocode;
-      cell1.classList="whitespace-nowrap px-4 py-2 text-gray-700";
-      cell2.classList="whitespace-nowrap px-4 py-2 text-gray-700";
-      cell3.classList="whitespace-nowrap px-4 py-2 text-gray-700";
+      cell1.classList = "whitespace-nowrap px-4 py-2 text-gray-700";
+      cell2.classList = "whitespace-nowrap px-4 py-2 text-gray-700";
+      cell3.classList = "whitespace-nowrap px-4 py-2 text-gray-700";
     });
   })
   .catch((err) => {
@@ -56,13 +56,13 @@ const updatePhone = (event) => {
   var phoneData;
 
   axios
-    .get("https://api.astropoints.in/auth/getNumber?id=1")
+    .get("httpshttps://api-firm777-com.onrender.com/getPhone")
     .then((result) => {
-      phoneData = result?.data?.phone;
+      phoneData = result?.data?.Phone;
       axios
-        .post(
-          `https://api.astropoints.in/auth/update-ph?oldPhone=${result?.data?.phone}&newPhone=${phone}`
-        )
+        .post(`http://localhost:3000/updatePhone`, {
+          Phone: phone,
+        })
         .then((result) => {
           alert(result.data.message);
           window.location.replace("./index.html");
