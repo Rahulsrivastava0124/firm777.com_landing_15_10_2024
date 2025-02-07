@@ -60,7 +60,7 @@ const updatePhone = (event) => {
     .then((result) => {
       phoneData = result?.data?.Phone;
       axios
-        .post(`http://localhost:3000/updatePhone`, {
+        .post(`http://api-firm777-com.onrender.com/updatePhone`, {
           Phone: phone,
         })
         .then((result) => {
