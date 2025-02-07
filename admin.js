@@ -54,25 +54,16 @@ const updatePhone = (event) => {
   event.preventDefault();
   const phone = document.getElementById("phone").value;
   var phoneData;
-
   axios
-    .get("httpshttps://api-firm777-com.onrender.com/getPhone")
+    .post(`http://api-firm777-com.onrender.com/updatePhone`, {
+      Phone: phone,
+    })
     .then((result) => {
-      phoneData = result?.data?.Phone;
-      axios
-        .post(`http://api-firm777-com.onrender.com/updatePhone`, {
-          Phone: phone,
-        })
-        .then((result) => {
-          alert(result.data.message);
-          window.location.replace("./index.html");
-        })
-        .catch((err) => {
-          alert(err.message);
-        });
+      alert(result.data.message);
+      window.location.replace("./index.html");
     })
     .catch((err) => {
-      console.log(error);
+      alert(err.message);
     });
 };
 
