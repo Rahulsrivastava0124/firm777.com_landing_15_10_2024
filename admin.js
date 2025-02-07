@@ -55,7 +55,7 @@ const updatePhone = (event) => {
   const phone = document.getElementById("phone").value;
   var phoneData;
   axios
-    .post(`http://api-firm777-com.onrender.com/updatePhone`, {
+    .post(`https://api-firm777-com.onrender.com/updatePhone`, {
       Phone: phone,
     })
     .then((result) => {
