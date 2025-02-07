@@ -59,7 +59,7 @@ const updatePhone = (event) => {
       Phone: phone,
     })
     .then((result) => {
-      alert(result.data.message);
+      alert("Change number is :-- ",result.data.Phone);
       window.location.replace("./index.html");
     })
     .catch((err) => {
